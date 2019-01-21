@@ -56,7 +56,7 @@ class PluginBlocktypeCpds extends PluginBlocktype {
         return '';
     }
 
-    public static function render_instance(BlockInstance $instance, $editing=false) {
+    public static function render_instance(BlockInstance $instance, $editing=false, $versioning=false) {
         global $exporter;
 
         require_once(get_config('docroot') . 'artefact/lib.php');
